@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "usb-plug-notification-darwin"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python script to get plug/unplug events on Darwin (MacOS)"
 authors = ["Dick Marinus <dick@mrns.nl>"]
 license = "GPL-3.0-or-later"

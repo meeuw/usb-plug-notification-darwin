@@ -63,4 +63,4 @@ def main(idvendor, idproduct):
     def callback(action):
         print(action, flush=True)
 
-    _main(int(idproduct, 16), int(idvendor, 16), callback)
+    _main(int(idvendor, 16), int(idproduct, 16), callback)
