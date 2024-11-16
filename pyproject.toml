@@ -6,9 +6,9 @@ authors = ["Dick Marinus <dick@mrns.nl>"]
 license = "GPL-3.0-or-later"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-pyobjc-framework-Cocoa = "^7.3"
-click = "^8.0.1"
+python = "^3.13"
+pyobjc-framework-Cocoa = "*"
+click = "*"
 
 [tool.poetry.dev-dependencies]
 
