@@ -1,0 +1,27 @@
+name: Update
+
+on:
+  schedule:
+    - cron: '3 2 1 * *'
+  workflow_dispatch:
+
+jobs:
+  update-poetry-lock:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python - -y
+
+      - name: Poetry update
+        run: |
+          poetry update --no-interaction
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
